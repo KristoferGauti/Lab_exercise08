@@ -21,4 +21,10 @@ def test_add_with_zeros_between_numbers():
 def test_negative_numbers_error():
     assert Calculator.Add("-1,2") == "Negatives not allowed: -1"
 
+def test_negative_numbers_error_pt2():
+    assert Calculator.Add("2,-4,3,-5") == "Negatives not allowed: -4,-5"
+
+def test_different_delimiter():
+    assert Calculator.Add("//X\n1X2") == 3
+
 
