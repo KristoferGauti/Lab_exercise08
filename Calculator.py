@@ -13,7 +13,7 @@ class Calculator(object):
         
         if string[0] == "/":
             delimiter = string[2]
-            if delimiter in punctuations or delimiter.isalpha() == True:
+            if delimiter in punctuations or delimiter.isalpha() == True or delimiter == "%":
                 replaced_string += ",".join(char for char in string if char.isdigit())
 
         if replaced_string == "":
@@ -47,5 +47,5 @@ class Calculator(object):
             return sum(int_list)
 
 if __name__ == "__main__":
-    calc = Calculator.Add("")
+    calc = Calculator.Add("//%\n1%2%3")
     

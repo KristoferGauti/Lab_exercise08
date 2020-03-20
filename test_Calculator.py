@@ -26,5 +26,6 @@ def test_negative_numbers_error_pt2():
 
 def test_different_delimiter():
     assert Calculator.Add("//X\n1X2") == 3
+    assert Calculator.Add("//%\n1%2%3") == 6
 
 
