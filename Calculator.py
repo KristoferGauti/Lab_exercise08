@@ -41,11 +41,7 @@ class Calculator(object):
 
                 raise NegativeError("Negatives not allowed: {}".format(negative_number[:-1]))
                     
-                        
 
-            
             return sum(int_list)
 
-if __name__ == "__main__":
-    calc = Calculator.Add("//%\n1%2%3")
     
