@@ -5,3 +5,6 @@ def test_add_empty_returns_zero() -> None:
 
 def test_add_the_string_one_returns_int_one():
     assert Calculator.Add("1") == 1
+
+def test_add_with_two_string_numbers_seperated_with_comma():
+    assert Calculator.Add("1,2")
