@@ -17,3 +17,8 @@ def test_add_with_two_string_numbers_seperated_with_comma_and_a_new_line():
 
 def test_add_with_zeros_between_numbers():
     assert Calculator.Add("1001,2") == 2
+
+def test_negative_numbers_error():
+    assert Calculator.Add("-1,2") == "Negatives not allowed: -1"
+
+
