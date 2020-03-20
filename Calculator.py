@@ -1,4 +1,4 @@
 class Calculator(object):
     @staticmethod
     def Add(input: str) -> int:
-        return "null"
+        return 0
