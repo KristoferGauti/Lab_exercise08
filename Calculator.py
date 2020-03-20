@@ -21,6 +21,6 @@ class Calculator(object):
 
 if __name__ == "__main__":
     calc = Calculator()
-    calc.Add("1\n2,3")
+    calc.Add("1001,3")
 
         
