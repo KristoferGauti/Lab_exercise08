@@ -16,4 +16,4 @@ def test_add_with_two_string_numbers_seperated_with_comma_and_a_new_line():
     assert Calculator.Add("1\n2,3") == 6
 
 def test_add_with_zeros_between_numbers():
-    assert Calculator.Add("1001,2")
+    assert Calculator.Add("1001,2") == 2
