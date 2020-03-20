@@ -1,4 +1,6 @@
 class Calculator(object):
-    @staticmethod
-    def Add(input: str) -> int:
-        return 0
+    def Add(string):
+        if string == "":
+            return 0
+        elif string.isdigit():
+            return int(string)
