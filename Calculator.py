@@ -11,9 +11,10 @@ class Calculator(object):
             replaced_string += string.replace("\n",",")
         elif "-" in string:
             is_negative = True
+            replaced_string += string
 
-        
-        replaced_string += string
+        else:
+            replaced_string += string
 
         if replaced_string == "":
             return 0
@@ -37,3 +38,6 @@ class Calculator(object):
 
             
             return sum(int_list)
+
+if __name__ == "__main__":
+    Calculator.Add("-1,2")
